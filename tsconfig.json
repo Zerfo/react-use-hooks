@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es5",
+    "outDir": "./lib",
+    "lib": ["es5", "es2015", "dom"],
+    "jsx": "react",
+    "declaration": true,
+    "paths": {
+      "@src": ["./*"],
+      "@hooks": ["./src/hooks"],
+      "@hooks/": ["./src/hooks/*"]
+    },
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "test"]
+}
