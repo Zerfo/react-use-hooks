@@ -1,5 +1,3 @@
-import 'jsdom-global/register';
-
 import * as React from 'react';
 
 import { act } from 'react-dom/test-utils';
