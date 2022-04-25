@@ -6,4 +6,5 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/test/setup-enzyme.ts'],
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  timers: 'legacy',
 };

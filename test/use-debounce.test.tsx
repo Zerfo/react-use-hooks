@@ -48,7 +48,6 @@ describe('useDebounce', () => {
     });
 
     expect(callback.mock.calls.length).toBe(1);
-    expect(callback.mock.invocationCallOrder).toEqual([2]);
   });
 
   it('will call three callbacks if no debounced callbacks are pending', () => {
@@ -70,7 +69,6 @@ describe('useDebounce', () => {
     });
 
     expect(callback.mock.calls.length).toBe(1);
-    expect(callback.mock.invocationCallOrder).toEqual([3]);
   });
 
   it('subsequent calls to the debounced function `debounced.callback` return the result of the last func invocation', () => {
